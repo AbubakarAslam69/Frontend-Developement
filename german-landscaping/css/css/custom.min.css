@@ -1,0 +1,1492 @@
+/* FONT IMPORT */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+/* Local Font */
+/* @font-face {
+	font-family: "Font Name";
+	src: url("../fonts/fontpath.ttf");
+  } */
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --primary: #ff0000;
+    --secondary: #333333;
+
+    /* Font Variable */
+    --font-text: "Poppins", sans-serif;
+    --font-heading: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    background: #fff;
+    overflow-x: hidden;
+    height: 100%;
+    font-family: var(--font-text);
+}
+
+section {
+    position: relative;
+    padding: 6rem 0;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2;
+    color: #828282;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #000;
+    font-family: var(--font-heading);
+}
+
+.img-auto {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+a,
+button {
+    text-decoration: none !important;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+a:hover,
+button:hover {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+figure {
+    margin: 0;
+}
+
+
+/* Cursor Start */
+
+.mouse-cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    border-radius: 50%;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    visibility: hidden;
+}
+
+.cursor-inner {
+    margin-left: 2px;
+    margin-top: 2px;
+    width: 7px;
+    height: 7px;
+    z-index: 10000001;
+    background-color: var(--primary);
+    -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out, margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    -o-transition: width 0.3s ease-in-out, height 0.3s ease-in-out, margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out, margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.cursor-inner.cursor-hover {
+    margin-left: -10px;
+    margin-top: -10px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--primary);
+    opacity: 0.3;
+}
+
+
+/* Cursor End */
+
+
+/* PRELOADER */
+
+.preLoader {
+    width: 100%;
+    height: 100%;
+    z-index: 1111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.preLoader.black {
+    background-color: var(--secondary);
+    z-index: 11113;
+}
+
+.preLoader.white {
+    z-index: 11112;
+    background-color: var(--primary);
+}
+
+
+/* PRELOADER */
+
+
+/* GLOBAL CSS */
+
+.themeBtn {
+    background: #D10000;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 25px;
+    line-height: normal;
+}
+
+.themeBtn.borderBtn {
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 1.04em 2em;
+}
+
+.heading {}
+
+.subtitle {}
+
+/* !GLOBAL CSS */
+
+
+/* mouse animation css  */
+
+
+/* .bounce-element {
+	animation: bounce 0.9s infinite alternate;
+	-webkit-animation: bounce 0.9s infinite alternate;
+}
+@keyframes bounce {
+	from {
+		transform: translateY(0px);
+	}
+	to {
+		transform: translateY(-15px);
+	}
+}
+@-webkit-keyframes bounce {
+	from {
+		transform: translateY(0px);
+	}
+	to {
+		transform: translateY(-15px);
+	}
+}
+.mouse {
+	position: absolute;
+	bottom: 1rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 11;
+	text-align: center;
+} */
+
+
+/* mouse animation css  */
+
+
+/* NAV HEADER CSS */
+
+header {
+    padding: 25px 0;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-brand  img{
+    position: relative;
+    margin-bottom: -4rem;
+    z-index: 1;
+}
+
+.nanc{
+    padding-left: 20px;
+}
+
+.navbar-nav {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 1rem;
+    color: #000000;
+    font-weight: 500;
+    padding-left: 40px;
+    display: inline-block;
+}
+
+.navbar-nav .nav-item .navjn{
+    font-weight: 600;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #D10000;
+    padding: 16px 32px;
+}
+/* !NAV HEADER CSS */
+
+
+/* MAIN HERO SLIDER CSS */
+
+/* .main-slider {
+    height: 100vh;
+}
+
+.homeSlider.swiper-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.homeSlider.swiper-container .swiper-slide {
+    overflow: hidden;
+}
+
+.homeSlider .swiper-pagination {
+    bottom: 8rem;
+    width: fit-content;
+    left: 18rem;
+}
+
+.homeSlider .swiper-button-prev,
+.homeSlider .swiper-button-next {
+    width: 4.35rem;
+    height: 4.35rem;
+    font-size: 1rem;
+    color: #fff;
+    display: inline-grid;
+    place-items: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.28);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.homeSlider .swiper-button-next {
+    right: 1rem;
+}
+
+.homeSlider .swiper-button-prev {
+    left: 1rem;
+}
+
+.homeSlider .swiper-button-next:hover,
+.homeSlider .swiper-button-prev:hover {
+    background: var(--white);
+    color: var(--black);
+}
+
+.homeSlider .swiper-pagination-bullet {
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    margin: 0 0.5rem !important;
+    opacity: 1;
+    border: 1px solid var(--white);
+    background: transparent;
+}
+
+.homeSlider .swiper-pagination-bullet-active {
+    background: var(--white);
+    position: relative;
+}
+
+.homeSlider .slide-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-slider h1 {
+    font-family: "Patua One", sans-serif;
+    margin: 0;
+    color: var(--white);
+    font-size: 165px;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.main-slider h1 span {
+    display: block;
+    font-size: 75px;
+}
+
+.main-slider p {
+    font-family: "Poppins", sans-serif;
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 1rem;
+    font-size: 18px;
+} */
+
+/* !MAIN HERO SLIDER CSS */
+
+
+/* Main-banner css */
+
+.MainBanner{
+    padding: 0;
+    width: 120rem;
+    height: 56.063rem;
+}
+
+.mbimg img{
+    position: absolute;
+}
+
+.mainb-info{
+    position: relative;
+    z-index: 1;
+    padding: 13.313rem 0 17.206rem 15.188rem;
+}
+
+.mainb-info h1{
+    font-family: "Patua One", sans-serif;
+    font-size: 11.277rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.mainb-info h1 span{
+    display: block;
+    font-size: 5.717rem;
+}
+
+.mainb-info p{
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+.mainb-info p span{
+    display: block;
+}
+
+.mainb-anchor{
+    padding-top: 17px;
+}
+
+.mainb-anchor a{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFF;
+    background-color: #D10000;
+    padding: 16px 32px;
+}
+
+/* Main-banner css */
+
+
+/* About css */
+
+.About{
+    background-color: #F6F6F6;
+    padding: 0;
+}
+
+.abt{
+    padding: 15px;
+}
+
+.aboutimg{
+   display: flex;
+   justify-content: end;
+}
+
+.abt h2{
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    padding-left: 15px;
+}
+
+.abt h2 span{
+    display: block;
+    font-family: "Patua One", sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.abt p{
+    font-family: "Poppins",sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    padding: 15px;
+}
+
+.anchor a{
+    border: 1px solid #D10000;
+    text-decoration: none;
+    padding: 16px 32px;
+    background-color: #D10000;
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.anchor{
+    padding-left: 15px;
+    padding-top: 29px;
+}
+
+/* About css */
+
+
+/* Services css */
+
+.srs h4{
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #D10000;
+}
+
+.srs h4 span{
+    display: block;
+    font-family: "Patua One", sans-serif;
+    font-size: 91.47px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.srsanc a{
+    text-decoration: none;
+    border: none;
+    background-color: #D10000;
+    color: #FFFFFF;
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.serviceSlider{
+    margin-right: -20rem;
+}
+
+.card-list a{
+    display: block;
+    text-decoration: none;
+    font-family: "Patua One", sans-serif;
+    font-size: 36.47px;
+    color: #FFFFFF;
+    padding: 9px 14px;
+    background-color: #000000;
+    text-align: center;
+}
+
+.card-list:hover a{
+    background-color: #D10000;
+    color: #FFFFFF;
+}
+
+
+/* Services css */
+
+/* Teams css */
+
+.Teams{
+    background-color: #F6F6F6;
+    padding: 0;
+}
+
+.info h6{
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #D10000;
+    font-weight: 500;
+}
+
+.info h6 span{
+    display: block;
+    font-family: "Patua One", sans-serif;
+    font-size: 70px;
+    color: #000000;
+}
+
+.info p{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.members{
+    display: flex;
+}
+
+.team1{
+    margin-right: 20px;
+    height: 87px;
+    width: 87px;
+}
+
+.member-info h5{
+    font-family: "Patua One", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #000000;
+}
+
+.member-info h5 span{
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #D10000;
+}
+
+.member-info p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+
+.teamimg{
+    width: 100vh;
+    margin:0;
+    padding: 0;
+}
+
+.teamimg::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 12%;
+    bottom: 0;
+    width: 14px;
+    height: 860px;
+    margin: auto;
+    background-color: #000000;
+    transform: skewY('20');
+    transform: rotate(8.65deg);
+    z-index: 1;
+}
+
+.info{
+    padding-top: 5rem;
+}
+
+/* Teams css */
+
+/* Reviews css */
+
+.Reviews{
+    background-color: #F6F6F6;
+}
+
+.rs6{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #D10000;
+}
+
+.rs1{
+    text-align: center;
+    font-family: "Patua One", sans-serif;
+    font-size: 91.47px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.reviewbox{
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+.reviewcontent{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.reviewcontent p{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+}
+
+.q2{
+    padding-left: 33rem;
+}
+
+.reviewinfo{
+    display: flex;
+    padding-top: 15px;
+}
+
+.reviewinfo img{
+    margin-right: 15px;
+}
+
+.reviewinfo h4{
+    padding-top: 20px;
+    font-family: "Patua One", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.reviewinfo h4 span{
+    display: block;
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #686868;
+}
+
+/* Reviews css */
+
+/* Projects css */
+
+.projectimgs{
+    display: flex;
+    padding: 15px 0;
+}
+
+.pji1{
+    margin-right: 40px;
+    padding-top: 13rem;
+}
+
+.pji2{
+    margin-right: 40px;
+    padding-top: 10rem;
+}
+
+.pji3{
+    margin-right: 15px;
+    padding-bottom: 15px;
+}
+
+.pji4{
+    margin-right: 15px;
+}
+
+.pji5{
+    margin-right: 40px;
+    padding-top: 10rem;
+}
+
+.pji6{
+    padding-top: 13rem;
+}
+
+.pj6{
+    text-align: center;
+    color: #D10000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.pj1{
+    text-align: center;
+    color: #000000;
+    font-family: "Patua One", sans-serif;
+    font-weight: 400;
+    font-size: 91.47px;
+}
+
+.pja{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.pja a{
+    text-decoration: none;
+    background-color: #D10000;
+    padding: 16px 32px;
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* Projects css */
+
+/* Blog css */
+
+.Blog{
+    padding: 5rem 0;
+}
+
+
+.binfo h6{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #D10000;
+}
+
+.binfo h6 span{
+    display: block;
+    font-family: "Patua One", sans-serif;
+    font-weight: 400;
+    font-size: 91.47px;
+    color: #000000;
+}
+
+.banc{
+    padding-top: 20px;
+}
+
+.banc a{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    border: 1px;
+    border-style: none;
+    background-color: #D10000;
+    color: #FFFFFF;
+    padding: 16px 32px;
+}
+
+.binfo1{
+    padding: 25px;
+    background-color: #F9F9F9;
+}
+
+.binfo1:hover{
+    background-color: #FFFFFF;
+    transition: 0.3s ease-in-out;
+}
+
+.blogbox:hover{
+    box-shadow: 0 1px 14px 0 rgb(0 0 0 / 14%);
+    transition: 0.3s ease-in-out;
+    margin-bottom: 2rem;
+}
+
+.binfo1 a{
+    text-decoration: none;
+    color: #FEFEFE;
+    background-color: #000000;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 2.88px;
+    border-radius: 5px;
+}
+
+.binfo1:hover a{
+    background-color: #D10000;
+}
+
+.binfo1 h4{
+    padding-top: 15px;
+    padding-right: 20px;
+    font-family: "Patua One", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.binfo1 p{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #828282;
+    padding-right: 18px;
+}
+
+.b1i{
+    width: 100%;
+}
+
+/* Blog css */
+
+/* Contact css */
+
+.Contact{
+    background: linear-gradient(to left, #313131 58%, #F6F6F6 55%);
+    padding: 0;
+}
+
+.submitinfo{
+    padding-top: 48px;
+    padding-bottom: 55px;
+}
+
+.contacter{
+    padding-top: 103px;
+    padding-bottom: 111.05px;
+    margin-left: -162px;
+}
+
+.ctxt{
+    font-family: "Patua One", sans-serif;
+    font-size: 91.47px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 20.95px;
+    margin-left: 5px;
+}
+
+.location{
+    display: flex;
+}
+
+.location a{
+    text-decoration: none;
+    color: #D10000;
+    background-color: #FFFFFF;
+    width: 159px;
+    height: 159px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    font-size: 35px;
+    margin-right: 30px;
+    margin-bottom: 35px;
+    transition: 0.5s ease-in-out;
+}
+
+.locationinfo{
+    padding-top: 45.95px;
+}
+
+.locationinfo h4{
+    font-family: "Patua One", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.locationinfo p{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    transition: 0.5s ease-in-out;
+}
+
+.locationinfo p span{
+    display: block;
+}
+
+.location:hover a{
+    background-color: #D10000;
+    color: #FFFFFF;
+}
+
+.smt1{
+    font-family: "Patua One", sans-serif;
+    font-size: 88px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.name input{
+    height: 82px;
+    width: 712px;
+    padding-left: 32px;
+    border: none;
+}
+
+.name textarea{
+   height: 221px;
+   width: 712px;
+   padding-top: 19px;
+   padding-left: 32px;
+}
+
+.name{
+    padding-top: 34px;
+}
+
+.submitbtn{
+    border: none;
+    background-color: #D10000;
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 35px;
+}
+
+/* Contact css */
+
+/* Main css */
+
+.Main{
+    padding: 0;
+    width: 1920px;
+    height: 522px;
+}
+
+.bannerimg img{
+    position: absolute;
+}
+
+.banner-info{
+    position: relative;
+    z-index: 1;
+    padding-top: 232px;
+    padding-left: 243px;
+    padding-bottom: 180px;
+}
+
+.banner-info h1{
+    font-family: "Patua One", sans-serif;
+    font-size: 100px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+/* Main css */
+
+/* Mission css */
+
+.Mission{
+    padding: 0;
+}
+
+.mission-info{
+    margin-right: 140px;
+    margin-left: -100px;
+}
+
+.mission-info h1{
+    font-family: "Patua One", sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.mission-info p{
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    padding: 15px 0;
+}
+
+
+
+.mission-img{
+    padding-top: 113px;
+    padding-bottom: 121px;
+}    
+
+/* Mission css */
+
+/* what we do css */
+
+.Emergency{
+    padding: 0;
+}
+
+.Overhead{
+    padding: 0;
+}
+
+/* What-we-do1,3,5 css */
+
+.emer-img{
+    display: flex;
+    justify-content: end;
+    padding-top: 110px;
+    padding-bottom: 100.5px;
+    margin-right: 64.97px;
+}
+
+.emer-info h1{
+    font-family: "Passion One", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.emer-info p{
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    padding-top: 15px;
+}
+
+/* What-we-do1,3,5 css */
+
+/* What-we-do2,4 css */
+
+.over-info{
+    margin-right: 150px;
+    margin-left: -113px;
+}
+
+.over-info h1{
+    font-family: "Passion One", sans-serif;
+    font-size: 60px;
+}
+
+.over-info p{
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: #000;
+    padding-top: 15px;
+}
+
+.over-img{
+    margin-left: -84px;
+}
+
+/* What-we-do2,4 css */
+
+/* what we do css */
+
+/* Projectsinr css */
+
+.Projects-inr{
+    padding: 6.875rem 0;
+}
+
+.projectsinr-img img {
+    height: 387px;
+    object-fit: cover;
+    margin-bottom: 30px;
+ }
+/* Projectsinr css */
+
+/* reviewpage css */
+
+.Reviewsinr{
+    padding: 6.875rem 0 2.875rem 0;
+}
+
+.reviewinr{
+    margin-bottom: 4.375rem;
+}
+
+/* reviewpage css */
+
+/* blogpage css */
+
+.Blogsinr{
+    padding: 6.875rem 0 2.875rem 0;
+}
+
+.bloginr{
+    margin-bottom: 4.375rem;
+}
+
+/* blogpage css */
+
+/* contactpage css */
+
+.Map{
+    padding: 0;
+}
+
+.Contactinr{
+    background-color: #F6F6F6;
+    padding: 0;
+}
+
+.submitinfor{
+    padding-top: 48px;
+    padding-bottom: 55px;
+    position: relative;
+    z-index: 1;
+    left: 25px;
+}
+
+.submitinfor:before{
+    content: '';
+    position: absolute;
+    background-color: #D10000;
+    z-index: -1;
+    width: 53.25rem;
+    height: 61.625rem;
+    bottom: 1.9%;
+    left: -8%;
+}
+
+.contacterr{
+    padding-top: 103px;
+    padding-bottom: 111.05px;
+    margin-left: -101px;
+}
+
+.ctxtr{
+    font-family: "Passion One", sans-serif;
+    font-size: 91.47px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 20.95px;
+    margin-left: 4px;
+}
+
+.locationr{
+    display: flex;
+}
+
+.locationr a{
+    text-decoration: none;
+    color: #D10000;
+    background-color: #FFFFFF;
+    width: 159px;
+    height: 159px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    font-size: 35px;
+    margin-right: 30px;
+    margin-bottom: 35px;
+    transition: 0.5s ease-in-out;
+}
+
+.locationinfor{
+    padding-top: 41.95px;
+}
+
+.locationinfor h4{
+    font-family: "Passion One", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.locationinfor p{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    transition: 0.5s ease-in-out;
+}
+
+.locationinfor p span{
+    display: block;
+}
+
+.locationr:hover a{
+    background-color: #D10000;
+    color: #FFFFFF;
+}
+
+.smt1r{
+    font-family: "Passion One", sans-serif;
+    font-size: 88px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.submitbtnr{
+    border: none;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 35px;
+}
+
+
+/* contactpage css */
+
+
+/* Footer css */
+
+
+footer{
+    background-color: #000000;
+    padding-top: 102px;
+}
+
+.foott3{
+    font-family: "Patua One", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.quicklist{
+    padding-top: 36.37px;
+    padding-left: 2.2px;
+}
+
+.quicklist li{
+    padding-bottom: 17.02px;
+}
+
+.quicklist li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+
+.phn{
+    margin-top: 47.37px;
+}
+
+
+.eml{
+   margin-top: 22.5px;
+}
+
+.eml span{
+    padding-bottom: 10px;
+}
+
+.loca{
+    margin-top: 45.5px;
+}
+
+.loca a{
+    padding-top: 5px;
+}
+
+.calFoter ul li{
+    color: #FFFFFF;
+    font-family: "Patua One", sans-serif;
+    font-size: 22px;
+}
+
+.calFoter ul li a{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: 1px dashed #f5f5f5;
+    padding-bottom: 7.5px;
+}
+
+.calFoter ul li span{
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.footp{
+    padding-top: 19.38px;
+    padding-left: 1.2px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #f5f5f5;
+    padding-right: 0;
+    width: 382px;
+}
+
+.inem{
+    margin-top: 29px;
+    position: relative;
+    display: inline-block;
+}
+
+.inem input{
+    height: 70px;
+    width: 382px;
+    padding-left: 26.57px;
+    background-color: #000000;
+    color: #F6F6F6;
+    border: 1px solid #6f6f6f;
+}
+
+.inem button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: auto;
+    border: none;
+    background: transparent;
+    font-size: 30px;
+    transform: rotate(17deg);
+    color: #D10000;
+    padding-top: 16.24px;
+    padding-right: 16.78px;
+    padding-bottom: 18.27px;
+}
+
+.social-link{
+    display: flex;
+    padding-top: 43.75px;
+    gap: 5px;
+}
+
+.social-link a{
+    color: #D10000;
+    width: 46px;
+    height: 46px;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    font-size: 16px;
+    display: grid;
+    place-items: center;
+}
+
+.social-link a:hover{
+    color: #FFFFFF;
+    background-color: #D10000;
+}
+
+.copyRight{
+    text-align: center;
+    padding-top: 22px;
+    border-top: 1px solid #f5f5f5;
+    margin-top: 75px;
+}
+
+/* Footer css */
+
+/* SEARCH BAR CSS */
+
+#search {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: translate(0px, -100%) scale(0, 0);
+    -moz-transform: translate(0px, -100%) scale(0, 0);
+    -o-transform: translate(0px, -100%) scale(0, 0);
+    -ms-transform: translate(0px, -100%) scale(0, 0);
+    transform: translate(0px, -100%) scale(0, 0);
+    opacity: 0;
+    z-index: 10000;
+}
+
+#search.open {
+    -webkit-transform: translate(0px, 0px) scale(1, 1);
+    -moz-transform: translate(0px, 0px) scale(1, 1);
+    -o-transform: translate(0px, 0px) scale(1, 1);
+    -ms-transform: translate(0px, 0px) scale(1, 1);
+    transform: translate(0px, 0px) scale(1, 1);
+    opacity: 1;
+}
+
+#search input[type="search"] {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: #fff !important;
+    background: rgba(0, 0, 0, 0);
+    font-size: 55px;
+    line-height: 65px;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+    font-family: arial;
+}
+
+#search .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 61px;
+    margin-left: -45px;
+    background-color: limegreen;
+    border: black;
+}
+
+#search .close {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+    opacity: 1;
+    padding: 10px 17px;
+    font-size: 27px;
+}
+
+.srch-btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.srch-btn .themeBtn {
+    padding: 15px 120px;
+    font-size: 20px;
+}
+
+
+/* !SEARCH BAR CSS */
+
